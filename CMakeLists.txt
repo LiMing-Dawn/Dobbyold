@@ -22,7 +22,7 @@ option(NearBranch "Enable near branch trampoline" ON)
 
 option(FullFloatingPointRegisterPack "Save and pack all floating-point registers" OFF)
 
-option(Plugin.SymbolResolver "Enable symbol resolver" OFF)
+option(Plugin.SymbolResolver "Enable symbol resolver" ON)
 
 option(Plugin.ImportTableReplace "Enable import table replace " OFF)
 
@@ -35,7 +35,7 @@ option(DOBBY_BUILD_TEST "Build test" OFF)
 # --- private
 option(DOBBY_BUILD_KERNEL_MODE "Build xnu kernel mode" OFF)
 
-option(Private.Obfuscation "Enable llvm obfuscation" OFF)
+option(Private.Obfuscation "Enable llvm obfuscation" ON)
 
 if ((NOT DEFINED CMAKE_BUILD_TYPE) OR (CMAKE_BUILD_TYPE STREQUAL "Debug"))
   set(DOBBY_DEBUG ON)
